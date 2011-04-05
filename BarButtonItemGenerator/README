@@ -1,0 +1,7 @@
+UIBarButtonItem-Generator
+original code by waynehartman
+
+This app is designed to run in the iPhone simulator.  You can customize the RGB values for your UIBarButtonItem and then save the pixel-perfect image to a destination that you specify in the code.
+
+All you have to do is launch the app in the iPhone simulator and use the buttons to save the image.
+
