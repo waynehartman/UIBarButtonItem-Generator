@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0E890D8134A79F400B2AC3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E890D7134A79F400B2AC3C /* UIKit.framework */; };
+		B0E890DA134A79F400B2AC3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E890D9134A79F400B2AC3C /* Foundation.framework */; };
+		B0E890DC134A79F400B2AC3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E890DB134A79F400B2AC3C /* CoreGraphics.framework */; };
+		B0E890E2134A79F400B2AC3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E890E0134A79F400B2AC3C /* InfoPlist.strings */; };
+		B0E890E5134A79F400B2AC3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E890E4134A79F400B2AC3C /* main.m */; };
+		B0E890E8134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E890E7134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.m */; };
+		B0E890EB134A79F400B2AC3C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E890E9134A79F400B2AC3C /* MainWindow.xib */; };
+		B0E890EE134A79F400B2AC3C /* BarButtonItemGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E890ED134A79F400B2AC3C /* BarButtonItemGeneratorViewController.m */; };
+		B0E890F1134A79F400B2AC3C /* BarButtonItemGeneratorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0E890EF134A79F400B2AC3C /* BarButtonItemGeneratorViewController.xib */; };
+		B0E890F8134A7A1500B2AC3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E890F7134A7A1500B2AC3C /* QuartzCore.framework */; };
+		B0E890FC134A8F1500B2AC3C /* WHSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E890FB134A8F1500B2AC3C /* WHSlider.m */; };
+		B0E890FF134A8FE000B2AC3C /* WHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E890FE134A8FE000B2AC3C /* WHTextField.m */; };
+		B0E8910B134A9BEE00B2AC3C /* UIBarButtonItem+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E8910A134A9BEE00B2AC3C /* UIBarButtonItem+Tint.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B0E890D3134A79F400B2AC3C /* BarButtonItemGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarButtonItemGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E890D7134A79F400B2AC3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0E890D9134A79F400B2AC3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0E890DB134A79F400B2AC3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B0E890DF134A79F400B2AC3C /* BarButtonItemGenerator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BarButtonItemGenerator-Info.plist"; sourceTree = "<group>"; };
+		B0E890E1134A79F400B2AC3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0E890E3134A79F400B2AC3C /* BarButtonItemGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BarButtonItemGenerator-Prefix.pch"; sourceTree = "<group>"; };
+		B0E890E4134A79F400B2AC3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0E890E6134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarButtonItemGeneratorAppDelegate.h; sourceTree = "<group>"; };
+		B0E890E7134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarButtonItemGeneratorAppDelegate.m; sourceTree = "<group>"; };
+		B0E890EA134A79F400B2AC3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		B0E890EC134A79F400B2AC3C /* BarButtonItemGeneratorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarButtonItemGeneratorViewController.h; sourceTree = "<group>"; };
+		B0E890ED134A79F400B2AC3C /* BarButtonItemGeneratorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarButtonItemGeneratorViewController.m; sourceTree = "<group>"; };
+		B0E890F0134A79F400B2AC3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BarButtonItemGeneratorViewController.xib; sourceTree = "<group>"; };
+		B0E890F7134A7A1500B2AC3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B0E890FA134A8F1500B2AC3C /* WHSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHSlider.h; sourceTree = "<group>"; };
+		B0E890FB134A8F1500B2AC3C /* WHSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHSlider.m; sourceTree = "<group>"; };
+		B0E890FD134A8FE000B2AC3C /* WHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTextField.h; sourceTree = "<group>"; };
+		B0E890FE134A8FE000B2AC3C /* WHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTextField.m; sourceTree = "<group>"; };
+		B0E89109134A9BEE00B2AC3C /* UIBarButtonItem+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Tint.h"; sourceTree = "<group>"; };
+		B0E8910A134A9BEE00B2AC3C /* UIBarButtonItem+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Tint.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0E890D0134A79F400B2AC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E890F8134A7A1500B2AC3C /* QuartzCore.framework in Frameworks */,
+				B0E890D8134A79F400B2AC3C /* UIKit.framework in Frameworks */,
+				B0E890DA134A79F400B2AC3C /* Foundation.framework in Frameworks */,
+				B0E890DC134A79F400B2AC3C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0E890C8134A79F400B2AC3C = {
+			isa = PBXGroup;
+			children = (
+				B0E890DD134A79F400B2AC3C /* BarButtonItemGenerator */,
+				B0E890D6134A79F400B2AC3C /* Frameworks */,
+				B0E890D4134A79F400B2AC3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0E890D4134A79F400B2AC3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0E890D3134A79F400B2AC3C /* BarButtonItemGenerator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E890D6134A79F400B2AC3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0E890F7134A7A1500B2AC3C /* QuartzCore.framework */,
+				B0E890D7134A79F400B2AC3C /* UIKit.framework */,
+				B0E890D9134A79F400B2AC3C /* Foundation.framework */,
+				B0E890DB134A79F400B2AC3C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0E890DD134A79F400B2AC3C /* BarButtonItemGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				B0E89100134A9BC000B2AC3C /* Categories */,
+				B0E890F9134A7A3900B2AC3C /* App Delegate */,
+				B0E890EC134A79F400B2AC3C /* BarButtonItemGeneratorViewController.h */,
+				B0E890ED134A79F400B2AC3C /* BarButtonItemGeneratorViewController.m */,
+				B0E890EF134A79F400B2AC3C /* BarButtonItemGeneratorViewController.xib */,
+				B0E890DE134A79F400B2AC3C /* Supporting Files */,
+				B0E890FA134A8F1500B2AC3C /* WHSlider.h */,
+				B0E890FB134A8F1500B2AC3C /* WHSlider.m */,
+				B0E890FD134A8FE000B2AC3C /* WHTextField.h */,
+				B0E890FE134A8FE000B2AC3C /* WHTextField.m */,
+			);
+			path = BarButtonItemGenerator;
+			sourceTree = "<group>";
+		};
+		B0E890DE134A79F400B2AC3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0E890DF134A79F400B2AC3C /* BarButtonItemGenerator-Info.plist */,
+				B0E890E0134A79F400B2AC3C /* InfoPlist.strings */,
+				B0E890E3134A79F400B2AC3C /* BarButtonItemGenerator-Prefix.pch */,
+				B0E890E4134A79F400B2AC3C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0E890F9134A7A3900B2AC3C /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B0E890E9134A79F400B2AC3C /* MainWindow.xib */,
+				B0E890E6134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.h */,
+				B0E890E7134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		B0E89100134A9BC000B2AC3C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B0E89109134A9BEE00B2AC3C /* UIBarButtonItem+Tint.h */,
+				B0E8910A134A9BEE00B2AC3C /* UIBarButtonItem+Tint.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0E890D2134A79F400B2AC3C /* BarButtonItemGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E890F4134A79F400B2AC3C /* Build configuration list for PBXNativeTarget "BarButtonItemGenerator" */;
+			buildPhases = (
+				B0E890CF134A79F400B2AC3C /* Sources */,
+				B0E890D0134A79F400B2AC3C /* Frameworks */,
+				B0E890D1134A79F400B2AC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarButtonItemGenerator;
+			productName = BarButtonItemGenerator;
+			productReference = B0E890D3134A79F400B2AC3C /* BarButtonItemGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0E890CA134A79F400B2AC3C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B0E890CD134A79F400B2AC3C /* Build configuration list for PBXProject "BarButtonItemGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0E890C8134A79F400B2AC3C;
+			productRefGroup = B0E890D4134A79F400B2AC3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0E890D2134A79F400B2AC3C /* BarButtonItemGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0E890D1134A79F400B2AC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E890E2134A79F400B2AC3C /* InfoPlist.strings in Resources */,
+				B0E890EB134A79F400B2AC3C /* MainWindow.xib in Resources */,
+				B0E890F1134A79F400B2AC3C /* BarButtonItemGeneratorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0E890CF134A79F400B2AC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E890E5134A79F400B2AC3C /* main.m in Sources */,
+				B0E890E8134A79F400B2AC3C /* BarButtonItemGeneratorAppDelegate.m in Sources */,
+				B0E890EE134A79F400B2AC3C /* BarButtonItemGeneratorViewController.m in Sources */,
+				B0E890FC134A8F1500B2AC3C /* WHSlider.m in Sources */,
+				B0E890FF134A8FE000B2AC3C /* WHTextField.m in Sources */,
+				B0E8910B134A9BEE00B2AC3C /* UIBarButtonItem+Tint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B0E890E0134A79F400B2AC3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E890E1134A79F400B2AC3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B0E890E9134A79F400B2AC3C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E890EA134A79F400B2AC3C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		B0E890EF134A79F400B2AC3C /* BarButtonItemGeneratorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E890F0134A79F400B2AC3C /* en */,
+			);
+			name = BarButtonItemGeneratorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0E890F2134A79F400B2AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0E890F3134A79F400B2AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		B0E890F5134A79F400B2AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarButtonItemGenerator/BarButtonItemGenerator-Prefix.pch";
+				INFOPLIST_FILE = "BarButtonItemGenerator/BarButtonItemGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0E890F6134A79F400B2AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarButtonItemGenerator/BarButtonItemGenerator-Prefix.pch";
+				INFOPLIST_FILE = "BarButtonItemGenerator/BarButtonItemGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0E890CD134A79F400B2AC3C /* Build configuration list for PBXProject "BarButtonItemGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E890F2134A79F400B2AC3C /* Debug */,
+				B0E890F3134A79F400B2AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E890F4134A79F400B2AC3C /* Build configuration list for PBXNativeTarget "BarButtonItemGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E890F5134A79F400B2AC3C /* Debug */,
+				B0E890F6134A79F400B2AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0E890CA134A79F400B2AC3C /* Project object */;
+}
