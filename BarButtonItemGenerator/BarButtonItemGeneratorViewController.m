@@ -67,7 +67,7 @@ void RetinaAwareUIGraphicsBeginImageContext(CGSize size) {
 
 #pragma mark - View lifecycle
 
-static NSString* formattedValue = @"%2.02f";
+static NSString* formattedValue = @"%2.0f";
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -174,6 +174,12 @@ static NSString* formattedValue = @"%2.02f";
     [self.textGreen resignFirstResponder];
     [self.textBlue resignFirstResponder];
     [self.buttonText resignFirstResponder];
+    [self.fileName resignFirstResponder];
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField
+{
+    [self updateSampleButton];
 }
 
 - (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
