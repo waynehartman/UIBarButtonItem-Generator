@@ -30,6 +30,7 @@
 
 - (id) _toolbarButton;
 - (id) _info;
+- (void) setHighlighted:(BOOL)highlighted;
 
 @end
 
@@ -37,5 +38,6 @@
 
 - (void) setTint:(UIColor*) color;
 - (CALayer*) layer;
+- (void) setHighlighted:(BOOL) highlighted;
 
 @end

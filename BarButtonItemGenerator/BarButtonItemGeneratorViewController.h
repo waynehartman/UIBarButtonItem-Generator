@@ -44,7 +44,6 @@
 }
 
 - (IBAction) save:(id) sender;
-- (IBAction) saveDownPress:(id)sender;
 - (IBAction) slideEvent:(id)sender;
 - (IBAction) dismissKeyboard:(id) sender;
 

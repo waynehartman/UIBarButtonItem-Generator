@@ -33,6 +33,12 @@
     [toolbarButton setTintColor:color];
 }
 
+- (void) setHighlighted:(BOOL)highlighted
+{
+    id toolbarButton = [(id<UIBarButtonItemPrivate>)self _toolbarButton];
+    [toolbarButton setHighlighted:highlighted];
+}
+
 - (CALayer*) layer
 {
     id toolbarButton = [(id<UIBarButtonItemPrivate>)self _toolbarButton];

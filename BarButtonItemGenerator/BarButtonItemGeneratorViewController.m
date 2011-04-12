@@ -36,19 +36,24 @@ bool isRetina()
 
 void RetinaAwareUIGraphicsBeginImageContext(CGSize size) {
     static CGFloat scale = -1.0;
-    if (scale<0.0) {
+    if (scale < 0.0)
+    {
         UIScreen *screen = [UIScreen mainScreen];
-        if (isRetina()) {
+        if (isRetina())
+        {
             scale = [screen scale];
         }
-        else {
-            scale = 0.0; // mean use old api
+        else
+        {
+            scale = 0.0;
         }
     }
-    if (scale>0.0) {
+    if (scale > 0.0)
+    {
         UIGraphicsBeginImageContextWithOptions(size, NO, scale);
     }
-    else {
+    else
+    {
         UIGraphicsBeginImageContext(size);
     }
 }
@@ -112,17 +117,11 @@ static NSString* formattedValue = @"%2.0f";
 #pragma mark Instance Methods
 
 - (void) save:(id)sender
-{
-    NSString* filename = [self createFileNameWithDown:NO];
-    
-    [self saveImageWithFileName:filename withRetinaSuffix:isRetina()];
-}
-
-- (void) saveDownPress:(id)sender
-{
-    NSString* filename = [self createFileNameWithDown:YES];
-    
-    [self saveImageWithFileName:filename withRetinaSuffix:isRetina()];
+{    
+    [self saveImageWithFileName:[self createFileNameWithDown:NO] withRetinaSuffix:isRetina()];
+    [self.sampleButton setHighlighted:YES];
+    [self saveImageWithFileName:[self createFileNameWithDown:YES] withRetinaSuffix:isRetina()];
+    [self.sampleButton setHighlighted:NO];
 }
 
 - (void) slideEvent:(id)sender
@@ -243,6 +242,5 @@ static NSString* formattedValue = @"%2.0f";
     
     // Release any cached data, images, etc that aren't in use.
 }
-
 
 @end
