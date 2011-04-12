@@ -158,7 +158,7 @@ static NSString* formattedValue = @"%2.0f";
     UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
     NSData *theData = UIImagePNGRepresentation(theImage);
     
-    [theData writeToFile:[NSString stringWithFormat:@"/Users/Wayne/Desktop/%@%@.png", filename, retinaSize ? @"@2x" : @""] atomically:NO];
+    [theData writeToFile:[NSString stringWithFormat:@"/Users/YourNameHere/Desktop/%@%@.png", filename, retinaSize ? @"@2x" : @""] atomically:NO];
     
     UIGraphicsEndImageContext();
 }
