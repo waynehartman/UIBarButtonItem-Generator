@@ -48,7 +48,7 @@
 - (IBAction) dismissKeyboard:(id) sender;
 
 - (void) updateSampleButton;
-- (void) saveImageWithFileName:(NSString*) filename withRetinaSuffix:(BOOL) addSuffix;
+- (void) saveImageWithFileName:(NSString*) filename withRetinaSize:(BOOL) retinaSize;
 - (NSString*) createFileNameWithDown:(BOOL) down;
 
 @property (nonatomic, retain) IBOutlet WHSlider *sliderRed;

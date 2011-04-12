@@ -118,9 +118,13 @@ static NSString* formattedValue = @"%2.0f";
 
 - (void) save:(id)sender
 {    
-    [self saveImageWithFileName:[self createFileNameWithDown:NO] withRetinaSuffix:isRetina()];
+    [self saveImageWithFileName:[self createFileNameWithDown:NO] withRetinaSize:YES];
     [self.sampleButton setHighlighted:YES];
-    [self saveImageWithFileName:[self createFileNameWithDown:YES] withRetinaSuffix:isRetina()];
+    [self saveImageWithFileName:[self createFileNameWithDown:YES] withRetinaSize:YES];
+    [self.sampleButton setHighlighted:NO];
+    [self saveImageWithFileName:[self createFileNameWithDown:NO] withRetinaSize:NO];
+    [self.sampleButton setHighlighted:YES];
+    [self saveImageWithFileName:[self createFileNameWithDown:YES] withRetinaSize:NO];
     [self.sampleButton setHighlighted:NO];
 }
 
@@ -136,18 +140,25 @@ static NSString* formattedValue = @"%2.0f";
     }
 }
 
-- (void) saveImageWithFileName:(NSString*) filename withRetinaSuffix:(BOOL) addSuffix
+- (void) saveImageWithFileName:(NSString*) filename withRetinaSize:(BOOL) retinaSize
 {
     CALayer* layer = [self.sampleButton layer];
     
-    RetinaAwareUIGraphicsBeginImageContext(layer.frame.size);
+    if (retinaSize)
+    {
+        RetinaAwareUIGraphicsBeginImageContext(layer.frame.size);
+    }
+    else 
+    {
+        UIGraphicsBeginImageContext(layer.frame.size);
+    }
     
     CGContextRef theContext = UIGraphicsGetCurrentContext();
     [layer renderInContext:theContext];
     UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
     NSData *theData = UIImagePNGRepresentation(theImage);
     
-    [theData writeToFile:[NSString stringWithFormat:@"/Users/YourUserName/Desktop/%@%@.png", filename, addSuffix ? @"@2x" : @""] atomically:NO];
+    [theData writeToFile:[NSString stringWithFormat:@"/Users/Wayne/Desktop/%@%@.png", filename, retinaSize ? @"@2x" : @""] atomically:NO];
     
     UIGraphicsEndImageContext();
 }
